@@ -1,1 +1,134 @@
+/* Основний CSS */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+    background-image: linear-gradient(to bottom, black, #2B4017, #9519ad);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+/* Хедер */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+/* Навігація */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: rgba(76, 175, 80, 0.3);
+    color: #4CAF50;
+    transform: translateY(-2px);
+}
+
+/* Контент */
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Картинки по центру */
+img {
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+
+/* Заголовки */
+h1, h2, h3 {
+    text-align: center;
+    margin: 25px 0;
+}
+
+h1 {
+    font-size: 42px;
+    color: #4CAF50;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #ddd;
+    font-weight: 400;
+}
+
+.mytext {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Контейнер для футболістів */
+.player-section {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 40px 0;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.player-section h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+/* Відео */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(76, 175, 80, 0.3);
+}
